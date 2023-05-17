@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paiement et accès à l'appel vidéo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .payment-section {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .payment-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .payment-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .payment-form input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .payment-form button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #ff9900;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .payment-form button:hover {
+      background-color: #e68a00;
+    }
+
+    .payment-description {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-section">
+    <h2>Paiement et accès à l'appel vidéo</h2>
+    <div class="payment-form">
+      <form id="paymentForm">
+        <input type="text" name="montant" placeholder="Montant à payer" value="300" readonly>
+        <input type="text" name="numero" placeholder="Numéro de téléphone">
+
+        <button type="submit">Effectuer le paiement</button>
+      </form>
+    </div>
+
+    <div class="payment-description">
+      <p>Veuillez entrer le montant requis et votre numéro de téléphone pour effectuer le paiement et obtenir l'accès à l'appel vidéo.</p>
+      <p>Une fois le paiement effectué, vous recevrez les instructions pour rejoindre l'appel vidéo.</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var montant = document.getElementsByName('montant')[0].value;
+      var numero = document.getElementsByName('numero')[0].value;
+
+      console.log("Montant : " + montant + " gdes");
+      console.log("Numéro de téléphone : " + numero);
+      console.log("Numéro de téléphone Moncash (vendeur) : 12345678"); // Remplacez par votre numéro Moncash
+
+      // Simulation de l'appel à l'API Moncash Haïti avec les données de paiement
+      // Dans un environnement réel, vous effectueriez l'appel réel à l'API à la place de ces logs
+
+      if (montant >= 300) {
+        alert("Paiement effectué avec succès !");
+    window.location.href = "appel-video.html"; // Remplacez par votre lien vers la page de l'appel vidéo
+  } else {
+    alert("Le montant du paiement est insuffisant !");
+  }
+});
+ </script>
+</body>
+</html>
