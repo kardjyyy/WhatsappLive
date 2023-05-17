@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appel Vidéo Show</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .banner {
+      background-image: url('banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner h1 {
+      color: #fff;
+      font-size: 48px;
+      text-align: center;
+    }
+    .description {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .description p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff9900;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .cta-button a:hover {
+      background-color: #e68a00;
+    }
+    .video-demo {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .video-demo img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1>Bienvenue sur Appel Vidéo Show</h1>
+  </div>
+  <div class="description">
+    <h2>Découvrez une nouvelle façon de communiquer avec vos proches</h2>
+    <p>Avec Appel Vidéo Show, vous pouvez profiter de conversations en temps réel grâce à nos appels vidéo de haute qualité. Connectez-vous avec vos amis, votre famille ou vos collègues où que vous soyez.</p>
+  </div>
+  <div class="cta-button">
+    <a href="paiement.html">Accéder à l'appel vidéo</a>
+  </div>
+  <div class="video-demo">
+    <img src="video-demo.jpg" alt="Vidéo de démonstration">
+  </div>
+</body>
+</html>
